@@ -100,3 +100,6 @@ def sheet_regierungsbezirke_details(filename, sheetname):
 @app.route("/bip/<filename>/<sheetname>/kreisebene")
 def sheet_kreisebene_details(filename, sheetname):
     return onxlfile(filename, lambda f: bipdata(f, sheetname, 2))
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=5000)
