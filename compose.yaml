@@ -1,7 +1,7 @@
 services:
   web:
     build:
-     context: myproject
+     context: app
      target: builder
     ports:
       - '5000:5000'
